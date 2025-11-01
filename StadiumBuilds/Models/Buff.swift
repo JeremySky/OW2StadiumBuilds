@@ -1,5 +1,5 @@
 //
-//  StadiumBuff.swift
+//  Buff.swift
 //  StadiumBuilds
 //
 //  Created by Jeremy Manlangit on 11/1/25.

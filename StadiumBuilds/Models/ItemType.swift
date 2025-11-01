@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+enum ItemType {
+    case weapon, ability, survival, gadgets
+}

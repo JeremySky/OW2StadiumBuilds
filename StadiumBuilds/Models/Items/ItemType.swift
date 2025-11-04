@@ -7,6 +7,9 @@
 
 import Foundation
 
-enum ItemType {
-    case weapon, ability, survival, gadgets
+enum ItemType: String {
+    case weapon = "W"
+    case ability = "A"
+    case survival = "S"
+    case gadgets = "G"
 }

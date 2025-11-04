@@ -1,10 +1,3 @@
-//
-//  Colors.swift
-//  StadiumBuilds
-//
-//  Created by Jeremy Manlangit on 11/3/25.
-//
-
 import SwiftUI
 
 extension Color {

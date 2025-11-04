@@ -1,12 +1,13 @@
-//
-//  Rarity.swift
-//  StadiumBuilds
-//
-//  Created by Jeremy Manlangit on 11/1/25.
-//
-
-import Foundation
+import SwiftUI
 
 enum Rarity {
     case common, rare, epic
+    
+    var color: Color {
+        switch self {
+        case .common:   .rarityCommon
+        case .rare:     .rarityRare
+        case .epic:     .rarityEpic
+        }
+    }
 }

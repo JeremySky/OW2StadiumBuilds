@@ -1,7 +1,8 @@
 import SwiftUI
 
 struct BuildOverview: View {
-    let cost: Int = 3500
+    let views: Int = 10
+    let likes: Int = 2
     
     var body: some View {
         VStack {
@@ -10,15 +11,33 @@ struct BuildOverview: View {
                 .padding(.vertical)
             
             BuildCardDiv("POWERS")
-                .padding(.horizontal)
                 .padding(.bottom)
             PowersScrollView()
             
             BuildCardDiv("ITEMS")
-                .padding(.horizontal)
             ItemsGridView()
                 .padding(.horizontal)
-                .padding(.bottom)
+            
+            BuildCardDiv()
+            
+            HStack(spacing: 20) {
+                HStack {
+                    Image(systemName: "eye")
+                    Text(String(views))
+                }
+                HStack {
+                    Image(systemName: "heart")
+                    Text(String(likes))
+                }
+                HStack {
+                    Image(systemName: "bubble")
+                    Text("Comments")
+                }
+            }
+            .kerning(1)
+            .foregroundStyle(Color.textPrimary)
+            .padding(.vertical)
+            .padding(.bottom, 12)
         }
         .cardBorder()
     }
